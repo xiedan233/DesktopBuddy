@@ -1,0 +1,40 @@
+# ===================== 依赖与构建产物 =====================
+node_modules/
+dist/
+out/
+release/
+# 按项目规范排除锁文件（如需可复现安装可取消下行注释）
+package-lock.json
+
+# ===================== 日志 =====================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ===================== 环境变量 / 密钥（绝不提交） =====================
+.env
+.env.*
+!.env.example
+
+# ===================== 大型冗余素材 =====================
+# 自嘲熊表情包原始素材库（168 个 GIF，约 130MB），运行时仅需 public/pet-gifs 中的 10 个 GIF，
+# 故不纳入版本库。如需完整素材，请另行管理或使用 Git LFS。
+self-deprecating-bear-emotes/
+
+# ===================== TypeScript 构建产物 =====================
+*.tsbuildinfo
+
+# ===================== 临时 / 调试脚本 =====================
+tmp/
+verify_main_bundle.cjs
+verify_msgs_bundle.cjs
+
+# ===================== 操作系统 / 编辑器 =====================
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
